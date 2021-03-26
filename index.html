@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Cocktails and Cuisines</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+      integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Cocktails and Cuisines</h1>
+      </header>
+
+      <main class="page-body">
+        <div class="media-object" id="mainImg">
+          <img
+            src="assets/imgs/food-banner.jpg"
+            alt="foodie pic"
+            class="float-center"
+          />
+        </div>
+
+        <div class="grid-container">
+          <div class="grid-x grid-margin-x" id="search-wrapper">
+            <div class="column large-6">
+              <input
+                id="searchBar"
+                type="text"
+                name="search"
+                placeholder="Enter Meal or Cocktail name..."
+              />
+            </div>
+
+            <div class="column large-4">
+              <select class="dropdownMenu">
+                <option value="default">Select a Category</option>
+                <option value="meals">Meals</option>
+                <option value="drinks">Drinks</option>
+              </select>
+            </div>
+
+            <div class="column large-2">
+              <button id="searchBtn">
+                Search <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Display Results w/limit of 20-->
+        <section class="grid-container" id="results-wrapper">
+          <h2>Results</h2>
+
+          <ul
+            class="accordion"
+            data-accordion
+            data-allow-all-closed="true"
+            id="searchResultsTab"
+          >
+            <!-- Dynamically generate data in JS-->
+          </ul>
+        </section>
+      </main>
+
+      <footer>
+        <h4>© Copyright by Foodie Friends</h4>
+        <p>
+          <a href="https://github.com/luuluu75">luuluu75</a> |
+          <a href="https://github.com/MissNG-Git">MissNG-Git</a> |
+          <a href="https://github.com/FraserClarke">FraserClarke</a> |
+          <a href="https://github.com/aksCo">aksCo</a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+      integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
